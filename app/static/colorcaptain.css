@@ -1,0 +1,31 @@
+#colorContainer{
+    height:65vh;
+}
+
+.color {
+    height:100%
+}
+
+.color:nth-child(1){
+    background:#473147;
+}
+
+.color:nth-child(2){
+    background:#FFFFEC;
+}
+
+.color:nth-child(3){
+    background:#A61702;
+}
+
+.color:nth-child(4){
+    background:#7D8D7D;
+}
+
+.color:nth-child(5){
+    background:#FFD996;
+}
+
+.color:nth-child(6){
+    background:#404040;
+}

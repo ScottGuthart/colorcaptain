@@ -1,9 +1,58 @@
 {% extends "base.html" %}
 {% from 'bootstrap/form.html' import render_form %}
 
+{% block styles %}
+{{super()}}
+<link rel='stylesheet' href="{{url_for('static', filename='colorcaptain.css')}}">
+<link rel='stylesheet' href="{{url_for('static', filename='darktheme.css')}}">
+{% endblock %}
+
+{% block scripts %}
+{{super()}}
+<script src = "{{url_for('static', filename='js/colorcaptain.js')}}"></script>
+{% endblock %}
+
 {% block app_content %}
-<h1 class="mt-5"> Hello World!</h1>
-<p class="lead">
-    This is the index page
+<br>
+<p>
+    <button type="button" class="btn btn-secondary btn-lg" id="readClipboard">Read Clipboard</button>
 </p>
+<div class="container-fluid" id="colorContainer">
+    <div class="row justify-content-md-center h-100" id="colors">
+        <div class="col color text-center text-truncate align-bottom">
+        </div>
+        <div class="col color">
+        </div>
+        <div class="col color">
+        </div>
+        <div class="col color">
+        </div>
+        <div class="col color">
+        </div>
+        <div class="col color">
+        </div>
+    <div>
+</div>
+<div class="container-fluid" id="labelContainer">
+    <div class="row justify-content-md-center h-100" id="colors">
+        <div class="col label text-center">
+        #473147
+        </div>
+        <div class="col label text-center">
+        #FFFFEC
+        </div>
+        <div class="col label text-center">
+        #A61702
+        </div>
+        <div class="col label text-center">
+        #7D8D7D
+        </div>
+        <div class="col label text-center">
+        #FFD996 
+        </div>
+        <div class="col label text-center">
+        #404040
+        </div>
+    <div>
+</div>
 {% endblock %}
